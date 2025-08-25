@@ -1,4 +1,4 @@
-# 🎮 Tic-Tac-Toe Game System (v0.1)
+# 🎮 Tic-Tac-Toe Game System (v0.2)
 
 A complete Verilog implementation of a Tic-Tac-Toe game with FSM-based game flow, AI opponent, and win detection.
 
@@ -34,7 +34,9 @@ tic_tac_toe/
 │   ├── win_checker.v       # Win detection logic
 │   └── top_module.v        # Top-level module
 ├── TB/
-│   └── tb_top_module.v     # Testbench for full system
+│   ├── tb_top_module.v     # Testbench for full system
+|   ├── tb_game_fsm.v       # Testbench for FSM states
+│   └── tb_ai_agent.v       # Testbench for AI's behavior
 └── README.md
 
 ```
