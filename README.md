@@ -34,8 +34,7 @@ tic_tac_toe/
 ├── RTL/
 │   ├── ai_agent.v          # AI decision-making module
 │   ├── game_fsm.v          # Main game state machine
-│   ├── win_checker.v       # Win detection logic
-│   └── top_module.v        # Top-level module
+│   └── win_checker.v       # Win detection logic
 ├── TB/
 │   ├── tb_top_module.v     # Testbench for full system
 |   ├── tb_game_fsm.v       # Testbench for FSM states
