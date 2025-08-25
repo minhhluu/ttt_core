@@ -226,9 +226,9 @@ module tb_top_module;
         
         repeat(40) @(posedge clk);
         if (winner == 2'b01) begin
-            $display("[%0t] ✅ PASS: Player wins detected", $time);
+            $display("[%0t][PASS]: Player wins detected", $time);
         end else begin
-            $display("[%0t] ❌ FAIL: Winner not detected", $time);
+            $display("[%0t][FAIL]: Winner not detected", $time);
         end
 
         // --- TEST 2: Reset game ---
@@ -236,7 +236,7 @@ module tb_top_module;
         reset_game;
         repeat(20) @(posedge clk);
         if (move_cnt == 0 && cell_position == 18'd0) begin
-            $display("[%0t] ✅ PASS: Game reset successfully", $time);
+            $display("[%0t][PASS]: Game reset successfully", $time);
         end
 
         // --- TEST 3: AI should take center ---
@@ -247,9 +247,9 @@ module tb_top_module;
         
         repeat(40) @(posedge clk);
         if (cell_position[9:8] == 2'b10) begin
-            $display("[%0t] ✅ PASS: AI took center", $time);
+            $display("[%0t][PASS]: AI took center", $time);
         end else begin
-            $display("[%0t] ❌ FAIL: AI did not take center", $time);
+            $display("[%0t][FAIL]: AI did not take center", $time);
         end
 
         // --- TEST 4: Invalid move ---
@@ -259,9 +259,9 @@ module tb_top_module;
         $display("[%0t] Move count after invalid move: %0d", $time, move_cnt);
         
         if (move_cnt == prev_move_cnt) begin
-            $display("[%0t] ✅ PASS: Invalid move rejected", $time);
+            $display("[%0t][PASS]: Invalid move rejected", $time);
         end else begin
-            $display("[%0t] ❌ FAIL: Invalid move accepted", $time);
+            $display("[%0t][FAIL]: Invalid move accepted", $time);
         end
 
         $display("[%0t] All tests completed", $time);
