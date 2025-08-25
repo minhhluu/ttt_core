@@ -4,6 +4,7 @@ A complete Verilog implementation of a Tic-Tac-Toe game with FSM-based game flow
 
   - [🔧 Features](#-features)
   - [📂 Project Structure](#-project-structure)
+  - [📝 Testbench](#-testbench-diagrams)
   - [🧩 Module Descriptions](#-module-descriptions)
   - [🎯 Tic-Tac-Toe Board Layout](#-tic-tac-toe-board-layout)
   - [🧪 Cell Mapping Bits](#-cell-mapping-bits)
@@ -12,6 +13,8 @@ A complete Verilog implementation of a Tic-Tac-Toe game with FSM-based game flow
     - [`ai_agent.v` - AI Decision Maker](#2-ai_agentv---ai-decision-maker)
     - [`game_fsm.v` - Game State Machine](#3-game_fsmv---game-state-machine)
     - [`top_module.v` - Top-Level Integration](#4-top_modulev---top-level-integration)
+
+
 
 ## 🔧 Features
 
@@ -40,6 +43,14 @@ tic_tac_toe/
 └── README.md
 
 ```
+## 📝 Testbench Diagrams
+
+### TB - `tb_top_module.v`
+![TB Top Module](https://i.postimg.cc/vQjz8TGk/tb-top-module.png)
+
+### TB - `tb_ai_agent.v`
+![TB AI Agent](https://i.postimg.cc/RMqdzKxw/tb-ai-agent.png)
+
 ## 🧩 Module Descriptions
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
