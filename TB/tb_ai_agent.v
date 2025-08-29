@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: Minh Luu
+// Engineer: 
 // 
 // Create Date: 08/23/2025 03:15:18 PM
 // Design Name: 
@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: testbench for AI's behavior
+// Description: 
 // 
 // Dependencies: 
 // 

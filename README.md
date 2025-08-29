@@ -1,4 +1,28 @@
-# 🎮 Tic-Tac-Toe Game System (v0.2)
+# 🎮 Tic-Tac-Toe Game System (v0.3)
+
+**Version 0.3**  
+*Changelog:*  
+- Redefined `for ... loop` in **AI Agent Module** → sequential states for improved timing
+
+---
+
+A complete Verilog implementation of a Tic-Tac-Toe game with FSM-based game flow, AI opponent, and win detection.
+
+  - [🔧 Features](#-features)
+  - [📂 Project Structure](#-project-structure)
+  - [📝 Testbench](#-testbench-diagrams)
+  - [🧩 Module Descriptions](#-module-descriptions)
+  - [🎯 Tic-Tac-Toe Board Layout](#-tic-tac-toe-board-layout)
+  - [🧪 Cell Mapping Bits](#-cell-mapping-bits)
+  - [🏆 Winning Lines](#-winning-lines)
+    - [`win_checker.v` - Win Condition Detector](#1-win_checkerv---win-condition-detector)
+    - [`ai_agent.v` - AI Decision Maker](#2-ai_agentv---ai-decision-maker)
+    - [`game_fsm.v` - Game State Machine](#3-game_fsmv---game-state-machine)
+    - [`top_module.v` - Top-Level Integration](#4-top_modulev---top-level-integration)
+
+
+
+## 🔧 Features
 
 A complete Verilog implementation of a Tic-Tac-Toe game with FSM-based game flow, AI opponent, and win detection.
 
